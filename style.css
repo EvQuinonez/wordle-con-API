@@ -1,65 +1,98 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  }
-     
-  h1 {
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #d3cce3, #e9e4f0);
+    font-weight: bold;
+    font-size: 24px;
+    color: white;
+}
+
+h1 {
     text-align: center;
     margin-top: 50px;
-  }
-     
-  #guess-input {
-    display: block;
-    margin: 0 auto 20px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#entrada {
     padding: 10px;
     font-size: 18px;
     width: 250px;
     border: 1px solid #ccc;
-  }
-     
-  #guess-button {
-    display: block;
-    margin: 0 auto;
-    padding: 13px 25px;
-    font-size: 18px;
-    background-color: #0CBABA;
+    border-radius: 10px;
+}
+
+#ayuda {
+    margin-left: 10px;
+    padding: 10px 15px;
+    font-size: 20px;
+    background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 3px;
-  }
-     
-  button:active {
-      transform: scale(0.95);
-  }
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
 
-  #guesses {
+#ayuda:hover {
+    background-color: #0056b3;
+}
+
+#intentar {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-bottom: 20px;
+}
+
+#intentar:hover {
+    background-color: #218838;
+}
+
+#intentar:active {
+    transform: scale(0.95);
+}
+
+#guesses {
     text-align: center;
     margin-top: 5px;
     font-size: 130%;
-  }
-  
-  #guesses h1 {
+}
+
+#guesses h1 {
     margin: 0;
     font-size: 130%;
-  }
-  
-  .letter {
-      border: 1px solid black;
-      padding: 3px;
-      margin: 3px;
-      min-width: 20px;
-      text-align: center;
-      display: inline-block
-  }
-     
-  .row{
-      margin-bottom: 10px;
-  }
-     
-  .input-area{
-      margin: 30px;
-  }
+}
+
+.letter {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 4px;
+    min-width: 40px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 24px;
+    color: white;
+}
+
+.row {
+    margin-bottom: 13px;
+}
+
+.input-area {
+    margin: 30px;
+}
